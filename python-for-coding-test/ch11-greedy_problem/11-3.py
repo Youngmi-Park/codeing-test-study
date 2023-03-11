@@ -30,4 +30,4 @@ for i in s:
     one += 1
   before = i # 이전문자 갱신
   
-print(zero if zero<one else one)
+print(min(zero, one)) # 둘 중 작은 것 출력
