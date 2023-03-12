@@ -32,7 +32,7 @@ for i in ball:
 for i in range(1, m):
   result += sum(count[i] * count[i+1:]) # 현재 위치 이후의 모든 공들의 합
   # 다른 방법
-  # n -= count[i], 무게가 i인 볼링공 개수 제외 A가 선택하는 공 개수
-  # result += count[i] * n, B가 선택하는 경우의 수와 곱하기
+  # n -= count[i] # 무게가 i인 볼링공 개수 제외 A가 선택하는 공 개수
+  # result += count[i] * n # B가 선택하는 경우의 수와 곱하기
  
 print(result) # 경우의 수 출력
